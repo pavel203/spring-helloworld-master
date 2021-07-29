@@ -13,7 +13,7 @@ public class AppConfig {
     }
 
     @Bean(name="cat")
-    @Scope(value = "prototype")
+    @Scope("prototype")
     public Cat getCat() {
         return new Cat();
     }
